@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+
+<p id="text">Hover over me</p>
+
+<script>
+$("#text").hover(
+  function() {
+    $(this).css("color", "red");   // mouse enter
+  },
+  function() {
+    $(this).css("color", "black"); // mouse leave
+  }
+);
+</script>
+
+</body>
+</html>

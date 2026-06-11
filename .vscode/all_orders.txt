@@ -1,0 +1,92 @@
+
+========================================
+Date: 01-05-2026 06:47 PM
+Name: jeevika
+Phone: 7890123409
+
+Cappuccino (Small) x2 = Rs.160
+Pasta (-) x1 = Rs.180
+Cheesecake (-) x1 = Rs.130
+
+Total: Rs.493.50
+
+========================================
+Date: 01-05-2026 07:01 PM
+Name: viren
+Phone: 2345667801
+
+Latte (Medium) x3 = Rs.330
+Sandwich (-) x4 = Rs.480
+Brownie (-) x2 = Rs.140
+
+Total: Rs.997.50
+
+========================================
+Date: 01-05-2026 11:58 PM
+Name: rishi
+Phone: 8767210912
+
+Latte (Medium) x3 = Rs.330
+Burger (-) x2 = Rs.300
+Green Tea (Medium) x2 = Rs.140
+
+Total: Rs.808.50
+
+========================================
+Date: 02-05-2026 07:16 PM
+Name: Neha
+Phone: 8901235672
+
+Cold Coffee (Small) x2 = Rs.200
+Burger (-) x2 = Rs.300
+
+Total: Rs.525.00
+
+========================================
+Date: 02-05-2026 07:22 PM
+Name: Ravi
+Phone: 9364107492
+
+Cappuccino (Small) x2 = Rs.160
+Green Tea (Small) x2 = Rs.100
+Hot Chocolate (Small) x2 = Rs.220
+
+Total: Rs.504.00
+
+========================================
+Date: 03-05-2026 11:23 PM
+Name: virat
+Phone: 8975545123
+
+Cold Coffee (Medium) x3 = Rs.360
+
+Total: Rs.378.00
+
+========================================
+Date: 04-05-2026 09:16 AM
+Name: ishaa
+Phone: 9876542123
+
+Masala Chai (Small) x2 = Rs.80
+
+Total: Rs.84.00
+
+========================================
+Date: 04-05-2026 09:27 AM
+Name: ishwin
+Phone: 1234567890
+
+Sandwich (-) x2 = Rs.240
+Burger (-) x2 = Rs.300
+Cappuccino (Small) x2 = Rs.160
+
+Total: Rs.735.00
+
+========================================
+Date: 04-05-2026 10:43 AM
+Name: dua
+Phone: 8776544322
+
+Hot Chocolate (Small) x2 = Rs.220
+
+Total: Rs.231.00

@@ -1,0 +1,17 @@
+{
+    "PNR76228": {
+        "names": [
+            "KASAK",
+            "RIYA",
+            "PRIYA"
+        ],
+        "flight": "IND-ASR",
+        "class": "Economy",
+        "paid": 9600,
+        "count": 3,
+        "from": "Amritsar",
+        "to": "Delhi",
+        "dep": "2026-06-15 06:00 AM",
+        "arr": "2026-06-15 07:15 AM"
+    }
+}

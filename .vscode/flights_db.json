@@ -1,0 +1,34 @@
+{
+    "IND-ASR": {
+        "from": "Amritsar",
+        "to": "Delhi",
+        "price": 3200,
+        "seats": 17,
+        "dep": "2026-06-15 06:00 AM",
+        "arr": "2026-06-15 07:15 AM"
+    },
+    "IND-DEL": {
+        "from": "Delhi",
+        "to": "Mumbai",
+        "price": 4800,
+        "seats": 15,
+        "dep": "2026-06-15 10:30 AM",
+        "arr": "2026-06-15 12:45 PM"
+    },
+    "IND-BOM": {
+        "from": "Mumbai",
+        "to": "Bangalore",
+        "price": 5200,
+        "seats": 10,
+        "dep": "2026-06-16 02:00 PM",
+        "arr": "2026-06-16 03:45 PM"
+    },
+    "IND-CCU": {
+        "from": "Kolkata",
+        "to": "Delhi",
+        "price": 6100,
+        "seats": 8,
+        "dep": "2026-06-16 08:00 PM",
+        "arr": "2026-06-16 10:30 PM"
+    }
+}
