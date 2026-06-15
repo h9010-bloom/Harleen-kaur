@@ -8,7 +8,7 @@ console.log("welcome to external javascript");
 
 //variables of javacript
 console.log("\n")
-let name="Divya";   // mostly use for strings
+let name1="Divya";   // mostly use for strings
 console.log(name);
 console.log("\n")
 const pi=3.14;   //value can't change after access
@@ -87,8 +87,8 @@ console.log("Not equalto operator: ",e != f);
 console.log("\n")
 console.log("Logical operators:")
 let age1 = 20;
-console.log("AND Logical operator: ",age > 5 && age > 30);
-console.log("OR logical operator: ",age > 5 || age > 30);
+console.log("AND Logical operator: ",age1 > 5 && age1 > 30);
+console.log("OR logical operator: ",age1 > 5 || age1 > 30);
 
 //5. Increement and Decreement operator:
 console.log("\n")
@@ -414,7 +414,7 @@ console.log("sum: ",result);
 
 //Creating function with Arrow method , it's a new method only in java
 console.log("\n");
-console.log("Arrow method functions 1st example: ")
+console.log("Arrow method functions 1st example: ");
 const multi=(v,k) => {console.log("Mutiplication: ", v*k)}
 multi(7,9);
 
@@ -429,4 +429,83 @@ multi(7,9);
 // 3.protected: Accessible within the same package and by subclasses in other packages.
 // 4.public: Accessible from any class across the entire application.
 
+//STRING INTERPOLATION METHOD
+console.log("\n");
+console.log("string interpolation method 1st example: ");
+let naam = "Divya Aggarwal";
+let umar = 20;
+console.log(`My name is: ${naam}. I'm a Enginnering student. My age is: ${umar}.`);// use tab ke upper tick(`) button insted of "",''.
 
+//ARRAY: array store hetrogeous elements in the memory. means any type of datatype elements can stored at single variable name array.
+console.log("\n");
+console.log("Array 1st example: ");
+let arr= [2,7,'A',2.6,true];
+console.log(arr);
+//updating an element in array
+console.log("\n");
+console.log("Array updating example: ");
+arr[0] = 8;
+console.log(arr);
+// Adding an element in array : we can add at beg so use unshift method  or end use push method  too
+//add an elememt at end
+console.log("\n");
+console.log("Array add at end example: ");
+arr.push(67); // add at end of the array
+console.log(arr)
+//adding an elemnt at beg
+console.log("\n");
+console.log("Array add at beg example: ");
+arr.unshift(4); //add at the beg of the array
+console.log(arr[0]);
+console.log(arr);
+//delete an element in array
+console.log("\n");
+console.log("Array delete at end example: ");
+arr.pop();//delete at end 
+console.log("\n");
+console.log("Array delete at beg example: ");
+arr.shift();//delete at beg
+console.log(arr);
+
+//traverse or print 
+console.log("\n");
+console.log("Array traversing example with for loop: ");
+for(let i=0; i < arr.length; i++){
+    console.log(arr[i]);
+}
+//modern method of javascript with forEach loop
+console.log("\n");
+console.log("Array traversing example with forEach loop: ");
+arr. forEach(i =>{console.log(i)});
+
+//includes checks the element is present or not, gives output: true or false 
+console.log("\n");
+console.log("Array example to check the element in array: ");
+console.log(arr.includes(7));
+
+//to check the index of an element:
+console.log("\n");
+console.log("Array example to check the index of element: ");
+console.log(arr.indexOf(7));
+
+//function of array
+console.log("\n");
+console.log("function of array example: ");
+function printelements(arr){
+    for( let i=0; i < arr.length; i++)
+    console.log(arr[i])
+}
+const students = ["john","pheobe","chandler","monica","rachel","ross"];
+printelements(students);
+
+printelements(arr);
+
+// example 
+let array = [3,5,2,6,1,9];
+function evenoddelements(array){
+    for(let i =0; i < array.length; i++){
+        if(i %2 === 0){
+            console.log("e")
+        }
+    }
+}
