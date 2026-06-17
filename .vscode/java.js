@@ -9,7 +9,7 @@ console.log("welcome to external javascript");
 //variables of javacript
 console.log("\n")
 let name1="Divya";   // mostly use for strings
-console.log(name);
+console.log(name1);
 console.log("\n")
 const pi=3.14;   //value can't change after access
 console.log(pi);
@@ -47,7 +47,7 @@ console.log(school);
 
 //examples:
 console.log("\n")
-console.log('Hi I am ' , name , '. ' , '\n' ,'I am Computer Engineering student. ')
+console.log('Hi I am ' , name1 , '. ' , '\n' ,'I am Computer Engineering student. ')
 
 //OPERATORS: It is used to perform the mathematical calculations.
 //Types of operators:
@@ -333,8 +333,14 @@ for(let color of colors){
 // }
 console.log("\n");
 console.log("for...in loop 1st example: ")
-
-
+let students = {
+    student_name : 'Rahul',
+    Roll_no : 78213,
+    Course : 'b.Tech'
+}
+for(let key in students){
+    console.log(key, ' : ', students[key]);
+}
 //Functions of JAVASCRIPT:
 //first example of functions:
 console.log("\n");
@@ -495,8 +501,8 @@ function printelements(arr){
     for( let i=0; i < arr.length; i++)
     console.log(arr[i])
 }
-const students = ["john","pheobe","chandler","monica","rachel","ross"];
-printelements(students);
+const Friends = ["john","pheobe","chandler","monica","rachel","ross"];
+printelements(Friends);
 
 printelements(arr);
 
@@ -505,7 +511,122 @@ let array = [3,5,2,6,1,9];
 function evenoddelements(array){
     for(let i =0; i < array.length; i++){
         if(i %2 === 0){
-            console.log("e")
+            console.log("even")
         }
     }
 }
+console.log("Objects example: ")
+//Objects:An object in JavaScript is a standalone data structure that stores related data and functionality as key-value pairs.
+//example:
+const student={
+    nameofstu :'Divya',
+    course : 'B.Tech COE',
+    Age : 20,
+    sem : '5th',
+    roll_no : 2412808 
+}
+//Accessing
+console.log("Objects example of Acessing: ");
+console.log(student.nameofstu);
+console.log(student["nameofstu"]);
+//updating
+console.log("\n");
+console.log("Objects example of Updating: ");
+student.nameofstu ='Divya Sharma'
+console.log(student.nameofstu);
+//Adding 
+console.log("\n");
+console.log("Objects example of Adding: ");
+student.city='Amritsar';
+console.log(student.city);
+//Deleting
+console.log("\n");
+console.log("Objects example of Deleting: ");
+delete student.Age;
+console.log(student.Age);
+
+// loops in objects 
+console.log("\n");
+console.log("Objects example of loops: ");
+for(let key in student){
+    console.log(key , " : ", student[key]);
+}
+
+let employees=[{
+    emp_id : 1,
+    emp_name : 'Vedang',
+    emp_dept : 'Finance'
+},
+{
+    emp_id : 2,
+    emp_name : 'Rahul',
+    emp_dept : 'Accounts'
+},
+{
+    emp_id : 3,
+    emp_name : 'Kriti',
+    emp_dept : 'Design'
+},
+{
+    emp_id : 4,
+    emp_name : 'Preeti',
+    emp_dept : 'IT'
+},
+{
+    emp_id : 5,
+    emp_name : 'Devyansh',
+    emp_dept : 'Game design VFX'
+}]
+
+// Accessing 
+console.log("Accesing object array example")
+console.log(employees[0]);
+console.log(employees[1].emp_name);
+
+//Updating
+console.log('After Updating object array example')
+employees[0].emp_name='Vedang Sharma';
+console.log(employees);
+
+//Adding
+console.log('After Adding object array example')
+employees.push({
+    emp_id : 6,
+    emp_name : 'Kiara',
+    emp_dept : 'HR'
+})
+console.log(employees);
+
+//Deleting
+console.log('After deleting object array example');
+employees.splice(5,3); // name of array.splice(index_number,number of elements you want to delte in object);
+console.log(employees);
+// Advanced concepts of array
+let arrrr = [4,78,34,16,2,90,5,87,54];
+//mapping()
+console.log('\n');
+console.log("Objects advanced concept of mapping example: ");
+let sqr = arrrr.map((a) => a*a); 
+console.log(sqr);
+
+//Filter()
+console.log('\n');
+console.log("Objects advanced concept of filter example: ");
+let evennumbers = arrrr.filter((num) => num % 2 === 0);
+console.log(evennumbers);
+
+let ageforvote = [23,67,12,10,6,24,22,18];
+let vote = ageforvote.filter((i) => i > 18);
+console.log(vote);
+
+//find()
+console.log('\n');
+console.log("Objects advanced concept of find example: ");
+let arrayyyy = employees.find((g) => g.emp_id ==3);
+console.log(arrayyyy);
+
+//slice() is used to copy a portion of an array without changing the original array
+console.log('\n');
+console.log("Objects advanced concept of slice example: ");
+console.log(arrrr.slice(1,6)); //slice(start index, end index)
+

@@ -1,29 +1,67 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>
-            example of inline and internal js
-        </title>
-        <script src="java.js"></script>
-        <style>
-            .btn{
-                width:10rem;
-                height:3rem;
-                background-color:bisque;
-                font-size: 30px;
-                border-radius: 30px;
-            }
-            .btn:hover{
-                background-color:blanchedalmond;
-            }
-        </style>
-    </head>
-    <body>
-        <!-- inline javascript -->
-        <h1>HELLO WORLD</h1>
-        <button class="btn" onclick="alert('WELCOME TO INLINE JAVASCRIPT')">click me</button>
-    </body>
-    <!-- internal javscript -->
-    <script>
-    </script>
+
+<head>
+    <title>
+        example of inline and internal js
+    </title>
+    <script src="DOM.js"></script>
+</head>
+
+<body>
+    <h1 id="head">HELLO</h1>
+    <button class="button" onclick="Changetext()">click me</button>
+
+    <h1>COUNTER:</h1>
+    <h1 id="count"> 0 </h1>
+    <button id="incbtn" onclick="increement()">+</button>
+    <button id="decbtn" onclick="decreement()">-</button>
+    <button id="resetbtn" onclick="reset()">Reset</button>
+
+    <h1 id="change">Change Theme</h1>
+    <button id="colorbtn" onclick="ChangeTheme()">Change Theme</button>
+
+    <h1>Input Password</h1>
+    <input id="pass" type="password"><br><br>
+    <button id="togbtn" onclick="toggle()">Show/Hide</button>
+
+    <h1>Input name </h1>
+    <input type="text" placeholder="name" id="username"><br><br>
+    <button id="submitt" onclick="submitt()">Submitt</button>
+    <h2 id="greet"></h2>
+
+    <h1>Input Age </h1>
+    <input id="age" type="number" placeholder="age"><br><br>
+    <button id="submitt1" onclick="submitt1()">Submitt</button>
+    <h2 id="result"></h2>
+
+    <h1>Image Animation </h1>
+    <img src="bulboff.jpg" id="bulb" height ="300px" wieght="300px";>
+    <button id="onbtn" onclick="BulbOnToggle()">Click for ON the Bulb</button>
+    <button id="offbtn" onclick="BulbOffToggle()">Click for OFF the Bulb</button>
+    <h2 id="text"></h2>
+</body>
+<script>
+    let bulb = true;
+    function BulbOnToggle(){
+        let bulbontext = document.getElementById("text");
+        let bulbImage = document.getElementById("bulb");
+        if(bulb == true){
+            bulbImage.src = "bulbon.jpg";
+            bulbontext.innertext= "Bulb ON"
+            bulb = false;
+        }
+    }
+    function BulbOffToggle(){
+        let bulbofftext = document.getElementById("text");
+        let bulbImage = document.getElementById("bulb");
+        if(bulb == false){
+            bulbImage.src = "bulboff.jpg";
+            bulbofftext.innertext= "Bulb OFF"
+            bulb = true;
+        }
+    }
+    
+</script>
+
 </html>
