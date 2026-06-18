@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>harleen</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            width: 400px;
+        }
+
+        input {
+            width: 75%;
+            padding: 12px;
+            border: none;
+            border-radius: 8px;
+            outline: none;
+            background: #f0f0f0;
+        }
+
+        #btn {
+            padding: 12px 20px;
+            border: none;
+            border-radius: 8px;
+            background: #4CAF50;
+            color: white;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        #btn:hover {
+            transform: scale(1.05);
+        }
+
+        #list {
+            list-style: none;
+            background: #f9f9f9;
+            margin: 10px 0;
+            padding: 12px;
+            border-radius: 8px;
+        }
+
+        .task {
+            background: #f9f9f9;
+            margin: 10px 0;
+            padding: 12px;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="container">
+        <h1>TO-DO LIST</h1>
+        <input type="text" placeholder="Enter Task" id="task-input"><br><br>
+        <input type="date" placeholder="Enter date" id="date-input"><br><br>
+        <button id="btn" onclick="AddTask()">Add</button><br><br>
+        <div id="list"></div>
+<script>
+    let todos = JSON.paras(localStorage.getItem("todos")) || []; // <---------------|
+    function AddTask() {                                                          //|
+        let task = document.querySelector("#task-input").value;                   //|
+        let date = document.querySelector("#date-input").value;                   //|
+                                                                                  //|  
+        todos.push({                           //value push ki hai todos array mei--|
+            taskname: task,
+            taskdate: date
+        });
+        localStorage.setItem("todo", JSON.stringify(todos));
+        display();
+
+        document.querySelector("#task-input").value = " ";
+        document.querySelector("#date-input").value = " ";
+    }
+    function display() {
+        let result = " ";
+
+        for (let i = 0; i < todos.length; i++) {
+            result += `
+            <span>${todos[i].taskname} - ${todos[i].taskdate}
+            </span><br>`;
+            document.querySelector("#list").innerHTML = result;
+        }
+    }
+
+</script>
+</section>
+</body>
+</html>

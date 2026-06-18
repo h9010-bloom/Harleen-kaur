@@ -66,3 +66,21 @@ function submitt1(){
     let result = document.getElementById("result");
     result.innerText = "Your age is: " + age ;
 }
+
+let bulb = true;
+    function BulbOnOffToggle(){
+        let bulbonoffbtn = document.getElementById("btn");
+        let bulbImage = document.getElementById("bulb");
+
+        if(bulb == true){
+            bulbImage.src = "bulbon.jpg";
+            bulbonoffbtn.innerText= "Bulb ON"
+            bulb = false;
+        }
+        else{
+            bulbImage.src = "bulboff.jpg";
+            bulbonoffbtn.innerText= "Bulb OFF"
+            bulb = true;
+        }
+    }
+

@@ -35,33 +35,14 @@
     <button id="submitt1" onclick="submitt1()">Submitt</button>
     <h2 id="result"></h2>
 
-    <h1>Image Animation </h1>
-    <img src="bulboff.jpg" id="bulb" height ="300px" wieght="300px";>
-    <button id="onbtn" onclick="BulbOnToggle()">Click for ON the Bulb</button>
-    <button id="offbtn" onclick="BulbOffToggle()">Click for OFF the Bulb</button>
-    <h2 id="text"></h2>
+    <h1>Bulb Image Animation </h1>
+    <img src="bulboff.jpg" id="bulb" height ="300px" wieght="300px"><br><br>
+    <button id="btn" onclick="BulbOnOffToggle()">Turn ON</button><br><br>
 </body>
 <script>
-    let bulb = true;
-    function BulbOnToggle(){
-        let bulbontext = document.getElementById("text");
-        let bulbImage = document.getElementById("bulb");
-        if(bulb == true){
-            bulbImage.src = "bulbon.jpg";
-            bulbontext.innertext= "Bulb ON"
-            bulb = false;
-        }
-    }
-    function BulbOffToggle(){
-        let bulbofftext = document.getElementById("text");
-        let bulbImage = document.getElementById("bulb");
-        if(bulb == false){
-            bulbImage.src = "bulboff.jpg";
-            bulbofftext.innertext= "Bulb OFF"
-            bulb = true;
-        }
-    }
-    
+    localStorage.setItem("username","Divya");
+    let value = localstorage.getItem("Age");
+    console.log("Age: ",value)
 </script>
 
 </html>

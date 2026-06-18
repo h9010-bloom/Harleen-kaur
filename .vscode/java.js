@@ -553,27 +553,27 @@ for(let key in student){
 }
 
 let employees=[{
-    emp_id : 1,
+    emp_id   :  1,
     emp_name : 'Vedang',
     emp_dept : 'Finance'
 },
 {
-    emp_id : 2,
+    emp_id   :  2,
     emp_name : 'Rahul',
     emp_dept : 'Accounts'
 },
 {
-    emp_id : 3,
+    emp_id   :  3,
     emp_name : 'Kriti',
     emp_dept : 'Design'
 },
 {
-    emp_id : 4,
+    emp_id   :  4,
     emp_name : 'Preeti',
     emp_dept : 'IT'
 },
 {
-    emp_id : 5,
+    emp_id   :  5,
     emp_name : 'Devyansh',
     emp_dept : 'Game design VFX'
 }]
