@@ -1,10 +1,15 @@
 // const express = require ('express');
 import express from 'express';
 
-const app = express(); //keyword normally app hi use hota.
+const app = express(); //keyword normally app hi use hota hai.
+
+app.use((req, res, next) => {
+    console.log("Middleware function executed");
+    next();
+});
 
 app.get("/", (req, res) => {
-    res.send("Hello World");
+    res.send("<h1>Hello World</h1>");
 });
 
 app.get("/student", (req, res) => {
